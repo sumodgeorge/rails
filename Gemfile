@@ -37,10 +37,10 @@ gem "json", ">= 2.0.0"
 
 group :rubocop do
   gem "rubocop", ">= 0.90", require: false
-  gem "rubocop-minitest", require: false
+  gem "rubocop-minitest", ">= 0.37.1", require: false
   gem "rubocop-packaging", require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-performance", ">= 1.24.0", require: false
+  gem "rubocop-rails", ">= 2.30.0", require: false
 end
 
 group :doc do
@@ -64,7 +64,7 @@ gem "webrick", require: false
 
 # Active Job
 group :job do
-  gem "resque", require: false
+  gem "resque", ">= 2.2.1", require: false
   gem "resque-scheduler", require: false
   gem "sidekiq", require: false
   gem "sucker_punch", require: false
