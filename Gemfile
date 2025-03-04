@@ -18,7 +18,7 @@ gem "selenium-webdriver", ">= 4.0.0"
 
 gem "rack-cache", "~> 1.2"
 gem "stimulus-rails"
-gem "turbo-rails"
+gem "turbo-rails", ">= 2.0.13"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "importmap-rails"
