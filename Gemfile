@@ -98,7 +98,7 @@ gem "useragent", require: false
 
 # Active Job
 group :job do
-  gem "resque", require: false
+  gem "resque", ">= 2.2.1", require: false
   gem "resque-scheduler", require: false
   gem "sidekiq", "!= 8.0.3", require: false
   gem "sucker_punch", require: false
