@@ -11,22 +11,22 @@ gem "rake", ">= 13"
 gem "releaser", path: "tools/releaser"
 
 gem "sprockets-rails", ">= 2.0.0", require: false
-gem "propshaft", ">= 0.1.7", "!= 1.0.1"
+gem "propshaft", ">= 1.2.0"
 gem "capybara", ">= 3.39"
 gem "selenium-webdriver", ">= 4.20.0"
 
 gem "rack-cache", "~> 1.2"
 gem "stimulus-rails"
-gem "turbo-rails"
+gem "turbo-rails", ">= 2.0.12"
 gem "jsbundling-rails"
-gem "cssbundling-rails"
-gem "importmap-rails", ">= 1.2.3"
-gem "tailwindcss-rails"
+gem "cssbundling-rails", ">= 1.4.2"
+gem "importmap-rails", ">= 2.2.0"
+gem "tailwindcss-rails", ">= 3.3.0"
 gem "dartsass-rails"
-gem "solid_cache"
-gem "solid_queue"
-gem "solid_cable"
-gem "kamal", ">= 2.1.0", require: false
+gem "solid_cache", ">= 1.0.7"
+gem "solid_queue", ">= 1.1.3"
+gem "solid_cable", ">= 3.0.6"
+gem "kamal", ">= 2.5.0", require: false
 gem "thruster", require: false
 # require: false so bcrypt is loaded only when has_secure_password is used.
 # This is to avoid Active Model (and by extension the entire framework)
@@ -52,11 +52,11 @@ group :rubocop do
   gem "rubocop-minitest", require: false
   gem "rubocop-packaging", require: false
   gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-rails", ">= 2.31.0", require: false
   gem "rubocop-md", require: false
 
   # This gem is used in Railties tests so it must be a development dependency.
-  gem "rubocop-rails-omakase", require: false
+  gem "rubocop-rails-omakase", ">= 1.1.0", require: false
 end
 
 group :mdl do
@@ -83,7 +83,7 @@ gem "msgpack", ">= 1.7.0", require: false
 # for railties
 gem "bootsnap", ">= 1.4.4", require: false
 gem "webrick", require: false
-gem "jbuilder", require: false
+gem "jbuilder", ">= 2.14.0", require: false
 gem "web-console", require: false
 
 # Action Pack and railties
