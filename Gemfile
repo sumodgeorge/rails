@@ -147,7 +147,7 @@ group :test do
 
   # Needed for Railties tests because it is included in generated apps.
   gem "brakeman"
-  gem "bundler-audit"
+  gem "bundler-audit", ">= 0.9.3"
 end
 
 platforms :ruby, :windows do
